@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    terraform:
+      project_path: ./
+      state: present
